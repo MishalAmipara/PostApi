@@ -8,13 +8,13 @@
     android:orientation="vertical"
     android:gravity="center">
 
- <EditText
-     android:layout_width="match_parent"
-     android:layout_height="wrap_content"
-     android:layout_margin="20dp"
-     android:hint="Enter Email"
-     android:id="@+id/etEmail"
-     android:textSize="30sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Enter Email"
+        android:id="@+id/etEmail"
+        android:textSize="30sp"/>
 
     <EditText
         android:layout_width="match_parent"

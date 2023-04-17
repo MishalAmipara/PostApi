@@ -55,12 +55,16 @@ public class MainActivity extends AppCompatActivity {
                             {
                                 if(suc==1)
                                 {
-                                    Toast.makeText(MainActivity.this, "User SuccessFu;lly Refgister", Toast.LENGTH_SHORT).show();
-
-
+                                    Toast.makeText(MainActivity.this, "User SuccessFully Refgister", Toast.LENGTH_SHORT).show();
                                 }
-
-
+                                else if(suc==2)
+                                {
+                                    Toast.makeText(MainActivity.this, "User already registered..", Toast.LENGTH_SHORT).show();
+                                }
+                            }
+                            else
+                            {
+                                Toast.makeText(MainActivity.this, "Not Connected..", Toast.LENGTH_SHORT).show();
                             }
 
                         } catch (JSONException e) {
@@ -75,14 +79,16 @@ public class MainActivity extends AppCompatActivity {
 
                 Log.d("====", "onErrorResponse:" + error.getLocalizedMessage());
             }
-        }) {
+        })
+
+        {
             @Nullable
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
 
                 HashMap map = new HashMap();
 
-                map.put("name", "Haresh");
+                map.put("name", "Mishal");
                 map.put("email", "hh@gmail.com");
                 map.put("password", "123456");
 
